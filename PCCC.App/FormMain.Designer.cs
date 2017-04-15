@@ -47,6 +47,7 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.xtraTabMain = new DevExpress.XtraTab.XtraTabControl();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabMain)).BeginInit();
@@ -76,7 +77,8 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
-            this.ribbonPage2});
+            this.ribbonPage2,
+            this.ribbonPage3});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl1.Size = new System.Drawing.Size(971, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
@@ -214,6 +216,11 @@
             this.xtraTabMain.Size = new System.Drawing.Size(971, 354);
             this.xtraTabMain.TabIndex = 6;
             // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "e lỡ commit cái gì đó chứ gì";
+            // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Highlight;
@@ -257,6 +264,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem bbiChiTietHS;
         private DevExpress.XtraTab.XtraTabControl xtraTabMain;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
 
     }
 }
