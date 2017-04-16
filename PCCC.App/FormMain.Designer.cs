@@ -44,10 +44,10 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.xtraTabMain = new DevExpress.XtraTab.XtraTabControl();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabMain)).BeginInit();
@@ -125,6 +125,7 @@
             this.bbiHS.Id = 5;
             this.bbiHS.LargeGlyph = global::PCCC.App.Properties.Resources.showformulas_32x32;
             this.bbiHS.Name = "bbiHS";
+            this.bbiHS.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiHS_ItemClick);
             // 
             // bbiHinhAnh
             // 
@@ -141,6 +142,7 @@
             this.bbiChiTietHS.Id = 8;
             this.bbiChiTietHS.LargeGlyph = global::PCCC.App.Properties.Resources.addcalculatedfield_32x32;
             this.bbiChiTietHS.Name = "bbiChiTietHS";
+            this.bbiChiTietHS.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiChiTietHS_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -194,9 +196,14 @@
             this.ribbonPageGroup4.ShowCaptionButton = false;
             this.ribbonPageGroup4.Text = "Hình ảnh";
             // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Hướng dẫn";
+            // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 497);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 668);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(971, 31);
@@ -213,13 +220,10 @@
             this.xtraTabMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabMain.Location = new System.Drawing.Point(0, 143);
             this.xtraTabMain.Name = "xtraTabMain";
-            this.xtraTabMain.Size = new System.Drawing.Size(971, 354);
+            this.xtraTabMain.Size = new System.Drawing.Size(971, 525);
             this.xtraTabMain.TabIndex = 6;
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "e lỡ commit cái gì đó chứ gì";
+            this.xtraTabMain.CloseButtonClick += new System.EventHandler(this.xtraTabMain_CloseButtonClick);
+            this.xtraTabMain.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.xtraTabMain_ControlAdded);
             // 
             // FormMain
             // 
@@ -227,10 +231,11 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 528);
+            this.ClientSize = new System.Drawing.Size(971, 699);
             this.Controls.Add(this.xtraTabMain);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.MinimumSize = new System.Drawing.Size(830, 700);
             this.Name = "FormMain";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;

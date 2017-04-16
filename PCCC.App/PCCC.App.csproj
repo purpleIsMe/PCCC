@@ -73,11 +73,23 @@
     <Compile Include="UC\UCCity.Designer.cs">
       <DependentUpon>UCCity.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UCFactor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCFactor.Designer.cs">
+      <DependentUpon>UCFactor.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UCDistrict.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC\UCDistrict.Designer.cs">
       <DependentUpon>UCDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCDetailFactor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCDetailFactor.Designer.cs">
+      <DependentUpon>UCDetailFactor.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UCMain.cs">
       <SubType>UserControl</SubType>
@@ -105,8 +117,14 @@
     <EmbeddedResource Include="UC\UCCity.resx">
       <DependentUpon>UCCity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCFactor.resx">
+      <DependentUpon>UCFactor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UCDistrict.resx">
       <DependentUpon>UCDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCDetailFactor.resx">
+      <DependentUpon>UCDetailFactor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UCMain.resx">
       <DependentUpon>UCMain.cs</DependentUpon>

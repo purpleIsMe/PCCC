@@ -70,5 +70,15 @@ namespace PCCC.App
             addTab("Quản lý huyện", new UC.UCDistrict());
         }
 
+        private void bbiChiTietHS_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            addTab("Quản lý chi tiết hệ số", new UC.UCDetailFactor());
+        }
+
+        private void bbiHS_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            addTab("Quản lý hệ số", new UC.UCFactor());
+        }
+
     }
 }
