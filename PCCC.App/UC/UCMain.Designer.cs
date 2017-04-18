@@ -46,6 +46,9 @@
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.navBarControl1);
             this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.splitContainerControl1.Panel2.Appearance.BackColor2 = System.Drawing.SystemColors.InactiveBorder;
+            this.splitContainerControl1.Panel2.Appearance.Options.UseBackColor = true;
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(830, 600);
             this.splitContainerControl1.SplitterPosition = 231;
@@ -63,6 +66,7 @@
             this.nbgStep6});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 231;
             this.navBarControl1.Size = new System.Drawing.Size(231, 600);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";

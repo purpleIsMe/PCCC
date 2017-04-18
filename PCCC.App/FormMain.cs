@@ -80,5 +80,10 @@ namespace PCCC.App
             addTab("Quản lý hệ số", new UC.UCFactor());
         }
 
+        private void bbiHinhAnh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            addTab("Quản lý hình ảnh", new UC.UCPictures());
+        }
+
     }
 }

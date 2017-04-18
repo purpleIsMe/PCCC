@@ -134,6 +134,7 @@
             this.bbiHinhAnh.Id = 6;
             this.bbiHinhAnh.LargeGlyph = global::PCCC.App.Properties.Resources.image_32x32;
             this.bbiHinhAnh.Name = "bbiHinhAnh";
+            this.bbiHinhAnh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiHinhAnh_ItemClick);
             // 
             // bbiChiTietHS
             // 

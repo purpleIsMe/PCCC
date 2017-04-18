@@ -97,6 +97,18 @@
     <Compile Include="UC\UCMain.Designer.cs">
       <DependentUpon>UCMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UCPictures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCPictures.Designer.cs">
+      <DependentUpon>UCPictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCStep1.Designer.cs">
+      <DependentUpon>UCStep1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +141,12 @@
     <EmbeddedResource Include="UC\UCMain.resx">
       <DependentUpon>UCMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCPictures.resx">
+      <DependentUpon>UCPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCStep1.resx">
+      <DependentUpon>UCStep1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,6 +172,7 @@
     <Content Include="Resources\add_32x32.png" />
     <Content Include="Resources\autosum_16x16.png" />
     <Content Include="Resources\autosum_32x32.png" />
+    <None Include="Resources\calculatenow_32x32.png" />
     <Content Include="Resources\city.ico" />
     <Content Include="Resources\city.png" />
     <Content Include="Resources\city~1.ico" />
