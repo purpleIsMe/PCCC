@@ -9,6 +9,7 @@
 
 namespace PCCC.DAL
 {
+    using PCCC.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;

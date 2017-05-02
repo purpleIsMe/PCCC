@@ -42,6 +42,10 @@ namespace PCCC.Services
             return _uow.SaveChanges();
         }
 
+        public string testMethod()
+        {
+            return "Hello world";
+        }
 
         public bool UpdateCity(City city)
         {
