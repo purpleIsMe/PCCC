@@ -16,31 +16,42 @@ namespace PCCC.App.UC
         {
             InitializeComponent();
         }
+        private string s_nameStep;
+        public string NameStep { get { return s_nameStep; } set { s_nameStep = value; } }
 
         private void nbiStep1_1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             // Xóa hết controls đang tồn tại trong palContent (nếu có)
             this.palContent.Controls.Clear();
+            s_nameStep = "Step1_1";
             //add form step 1 vào panel
-           // UCStep1 step = new UCStep1();
-           // step.Top = false;
-
-            var myControl = new PCCC.App.UC.UCStep1();  //MyProject.Modules.Masters();
+            var myControl = new PCCC.App.UC.UCStep1();
             palContent.Controls.Add(myControl);
-            
+            myControl.Show();
+        }
 
-            //step.Show();
+        private void nbiStep1_2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            // Xóa hết controls đang tồn tại trong palContent (nếu có)
+            this.palContent.Controls.Clear();
+            s_nameStep = "Step1_2";
+            //add form step 1 vào panel
+            var myControl = new PCCC.App.UC.UCStep1();
+            palContent.Controls.Add(myControl);
+            myControl.Show();
+        }
 
-            
-
-            //Form2 frmChild = new Form2();
-           // frmChild.TopLevel = false;
-            // Gắn vào panel
-           // this.panel1.Controls.Add(frmChild);
-
-
-            // Hiển thị form
-          //  frmChild.Show();
+        private void bviStep1_3_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            // Xóa hết controls đang tồn tại trong palContent (nếu có)
+            this.palContent.Controls.Clear();
+            s_nameStep = "Step1_3";
+            //add form step 1 vào panel
+            var myControl = new PCCC.App.UC.UCStep1();
+            //var step3 = myControl.Controls.Find("gbStep1_3", true);
+            //var step2 = myControl.Controls.Find("gbStep1_2", true);
+            palContent.Controls.Add(myControl);
+            myControl.Show();
         }
     }
 }

@@ -117,6 +117,7 @@
             this.nbiStep1_2.AppearancePressed.Options.UseFont = true;
             this.nbiStep1_2.Caption = "Xác suất sét đánh vào công trình trong năm";
             this.nbiStep1_2.Name = "nbiStep1_2";
+            this.nbiStep1_2.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiStep1_2_LinkClicked);
             // 
             // bviStep1_3
             // 
@@ -129,6 +130,7 @@
             this.bviStep1_3.AppearancePressed.Options.UseFont = true;
             this.bviStep1_3.Caption = "Xác suất sét đánh tổng hợp";
             this.bviStep1_3.Name = "bviStep1_3";
+            this.bviStep1_3.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.bviStep1_3_LinkClicked);
             // 
             // nbgStep234
             // 

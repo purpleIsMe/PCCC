@@ -39,8 +39,15 @@
     <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PCCC.Repositories">
+      <HintPath>..\PCCC.Repositories\bin\Debug\PCCC.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="PCCC.Services">
+      <HintPath>..\PCCC.Services\bin\Debug\PCCC.Services.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,9 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\DAO\DAO_City.cs" />
-    <Compile Include="Class\DTO\DTO_City.cs" />
-    <Compile Include="Class\DTO\DTO_Picture.cs" />
+    <Compile Include="Class\BUS\BUSCity.cs" />
     <Compile Include="Class\TabAdd.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -203,6 +208,9 @@
     <Content Include="Resources\image_32x32.png" />
     <Content Include="Resources\showformulas_16x16.png" />
     <Content Include="Resources\showformulas_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

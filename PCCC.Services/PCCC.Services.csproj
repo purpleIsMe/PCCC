@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implements\CityService.cs" />
+    <Compile Include="Interfaces\ICityService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PCCC.Common\PCCC.Common.csproj">
+      <Project>{5c30673b-6f48-4af0-baa0-18b751edd10b}</Project>
+      <Name>PCCC.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PCCC.Models\PCCC.Models.csproj">
+      <Project>{e085a973-9c10-458b-b444-1f735b78a70f}</Project>
+      <Name>PCCC.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PCCC.Repositories\PCCC.Repositories.csproj">
+      <Project>{b7b51c4b-afa4-4233-bb55-31fb6b805edb}</Project>
+      <Name>PCCC.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

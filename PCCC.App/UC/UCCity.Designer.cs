@@ -31,8 +31,8 @@
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.txtTenTP = new System.Windows.Forms.TextBox();
             this.txtMaTP = new System.Windows.Forms.TextBox();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -44,11 +44,14 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gctCity = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.nameCity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.codeCity = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -63,11 +66,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gctCity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -99,8 +102,8 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.simpleButton2);
-            this.layoutControl1.Controls.Add(this.simpleButton1);
+            this.layoutControl1.Controls.Add(this.btnSua);
+            this.layoutControl1.Controls.Add(this.btnThem);
             this.layoutControl1.Controls.Add(this.txtTenTP);
             this.layoutControl1.Controls.Add(this.txtMaTP);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -112,29 +115,30 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // simpleButton2
+            // btnSua
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Image = global::PCCC.App.Properties.Resources.editname_32x32;
-            this.simpleButton2.Location = new System.Drawing.Point(476, 61);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(73, 38);
-            this.simpleButton2.StyleController = this.layoutControl1;
-            this.simpleButton2.TabIndex = 8;
-            this.simpleButton2.Text = "Sửa";
+            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.Image = global::PCCC.App.Properties.Resources.editname_32x32;
+            this.btnSua.Location = new System.Drawing.Point(476, 61);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(73, 38);
+            this.btnSua.StyleController = this.layoutControl1;
+            this.btnSua.TabIndex = 8;
+            this.btnSua.Text = "Sửa";
             // 
-            // simpleButton1
+            // btnThem
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Image = global::PCCC.App.Properties.Resources.add_32x32;
-            this.simpleButton1.Location = new System.Drawing.Point(281, 61);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(87, 38);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 7;
-            this.simpleButton1.Text = "Thêm";
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.Image = global::PCCC.App.Properties.Resources.add_32x32;
+            this.btnThem.Location = new System.Drawing.Point(281, 61);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(87, 38);
+            this.btnThem.StyleController = this.layoutControl1;
+            this.btnThem.TabIndex = 7;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenTP
             // 
@@ -232,7 +236,7 @@
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.simpleButton2;
+            this.layoutControlItem4.Control = this.btnSua;
             this.layoutControlItem4.Location = new System.Drawing.Point(464, 49);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(77, 42);
@@ -241,7 +245,7 @@
             // 
             // layoutControlItem3
             // 
-            this.layoutControlItem3.Control = this.simpleButton1;
+            this.layoutControlItem3.Control = this.btnThem;
             this.layoutControlItem3.Location = new System.Drawing.Point(269, 49);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(91, 42);
@@ -259,6 +263,14 @@
             this.emptySpaceItem3.Size = new System.Drawing.Size(165, 91);
             this.emptySpaceItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 91);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(804, 12);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem4
             // 
@@ -300,16 +312,72 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ID,
+            this.nameCity,
+            this.codeCity});
             this.gridView1.GridControl = this.gctCity;
             this.gridView1.Name = "gridView1";
             // 
-            // emptySpaceItem1
+            // ID
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 91);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(804, 12);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.ID.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.ID.AppearanceCell.Options.UseFont = true;
+            this.ID.AppearanceCell.Options.UseTextOptions = true;
+            this.ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.ID.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.ID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.ID.AppearanceHeader.Options.UseFont = true;
+            this.ID.AppearanceHeader.Options.UseTextOptions = true;
+            this.ID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.ID.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.ID.Caption = "STT";
+            this.ID.FieldName = "ID";
+            this.ID.MinWidth = 50;
+            this.ID.Name = "ID";
+            this.ID.Visible = true;
+            this.ID.VisibleIndex = 0;
+            this.ID.Width = 100;
+            // 
+            // nameCity
+            // 
+            this.nameCity.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.nameCity.AppearanceCell.Options.UseFont = true;
+            this.nameCity.AppearanceCell.Options.UseTextOptions = true;
+            this.nameCity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.nameCity.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.nameCity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.nameCity.AppearanceHeader.Options.UseFont = true;
+            this.nameCity.AppearanceHeader.Options.UseTextOptions = true;
+            this.nameCity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.nameCity.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.nameCity.Caption = "Tên tỉnh";
+            this.nameCity.FieldName = "nameCity";
+            this.nameCity.MinWidth = 50;
+            this.nameCity.Name = "nameCity";
+            this.nameCity.Visible = true;
+            this.nameCity.VisibleIndex = 1;
+            this.nameCity.Width = 400;
+            // 
+            // codeCity
+            // 
+            this.codeCity.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.codeCity.AppearanceCell.Options.UseFont = true;
+            this.codeCity.AppearanceCell.Options.UseTextOptions = true;
+            this.codeCity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.codeCity.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.codeCity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.codeCity.AppearanceHeader.Options.UseFont = true;
+            this.codeCity.AppearanceHeader.Options.UseTextOptions = true;
+            this.codeCity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.codeCity.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.codeCity.Caption = "Mã tỉnh";
+            this.codeCity.FieldName = "codeCity";
+            this.codeCity.MinWidth = 50;
+            this.codeCity.Name = "codeCity";
+            this.codeCity.Visible = true;
+            this.codeCity.VisibleIndex = 2;
+            this.codeCity.Width = 300;
             // 
             // UCCity
             // 
@@ -332,11 +400,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gctCity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,8 +422,8 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraGrid.GridControl gctCity;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnSua;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
@@ -364,6 +432,9 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraGrid.Columns.GridColumn ID;
+        private DevExpress.XtraGrid.Columns.GridColumn nameCity;
+        private DevExpress.XtraGrid.Columns.GridColumn codeCity;
 
     }
 }
