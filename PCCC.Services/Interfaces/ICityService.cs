@@ -18,5 +18,7 @@ namespace PCCC.Services
         bool UpdateCity(City city);
 
         bool UpdateDistrict(District district);
+
+        string testMethod();
     }
 }

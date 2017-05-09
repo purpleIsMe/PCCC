@@ -1,11 +1,11 @@
-﻿using PCCC.App.Configurations;
+﻿using PCCC.FormTest.Configurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PCCC.App
+namespace PCCC.FormTest
 {
     static class Program
     {
@@ -18,7 +18,7 @@ namespace PCCC.App
             StructureMapConfiguration.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new Form1());
         }
     }
 }

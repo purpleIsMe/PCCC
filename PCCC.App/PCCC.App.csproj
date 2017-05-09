@@ -45,6 +45,9 @@
     <Reference Include="PCCC.Services">
       <HintPath>..\PCCC.Services\bin\Debug\PCCC.Services.dll</HintPath>
     </Reference>
+    <Reference Include="StructureMap, Version=4.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.5\lib\net45\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -61,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Class\BUS\BUSCity.cs" />
     <Compile Include="Class\TabAdd.cs" />
+    <Compile Include="Configurations\StructureMapConfiguration.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +177,7 @@
     <EmbeddedResource Include="UC\UCStep2.resx">
       <DependentUpon>UCStep2.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
